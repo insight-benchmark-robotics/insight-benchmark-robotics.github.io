@@ -145,6 +145,65 @@
     </div>
   </section>
 
+  <section class="section has-background-white">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Real-World Validation</h2>
+      <div class="content has-text-justified">
+        <p>
+          To verify the ecological relevance of our benchmark, we conducted real-world experiments using a 7-DoF robotic arm. 
+          We fine-tuned the simulation-pretrained weights using <strong>LoRA</strong> on a small set of real demonstrations (15 trajectories per task variation). 
+        </p>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column is-full has-text-centered">
+          <img src="realworld_setup.png" alt="Real-world Experiment Setup" style="border-radius: 12px; max-width: 100%;">
+          <p class="is-size-7 has-text-grey mt-2">Figure 11. Real-world experimental setup and illustrative examples for Task A and Task C. [cite: 74, 87]</p>
+        </div>
+      </div>
+
+      <div class="columns is-centered mt-5">
+        <div class="column is-eight-fifths">
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+              <thead>
+                <tr class="has-background-link-light">
+                  <th class="has-text-centered">Task Category</th>
+                  <th class="has-text-centered">Method</th>
+                  <th class="has-text-centered">Success Rate (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="has-text-centered" style="vertical-align: middle;"><strong>Task C (Directional)</strong></td>
+                  <td class="has-text-centered">Guided-Visual (G-VLA)</td>
+                  <td class="has-text-centered">45% [cite: 88]</td>
+                </tr>
+                <tr>
+                  <td class="has-text-centered">Language-Instructed (LI-VLA)</td>
+                  <td class="has-text-centered"><strong>65%</strong> [cite: 88]</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="has-text-centered" style="vertical-align: middle;"><strong>Task A (Selection)</strong></td>
+                  <td class="has-text-centered">Guided-Visual (G-VLA)</td>
+                  <td class="has-text-centered">45% [cite: 88]</td>
+                </tr>
+                <tr>
+                  <td class="has-text-centered">Language-Instructed (LI-VLA)</td>
+                  <td class="has-text-centered"><strong>50%</strong> [cite: 88]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="is-size-6 has-text-grey-dark mt-3">
+            Consistent with our simulation results, the challenge of grounding in-situ visual guides persists in the real world. 
+            The performance gap confirms that visual perception of embedded guides remains a core bottleneck. [cite: 89]
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
