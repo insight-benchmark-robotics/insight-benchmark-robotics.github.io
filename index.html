@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Towards Grounded In-Situ Guidance for Robotic Manipulation">
+  <meta name="description" content="INSIGHT Bench: Towards Grounded IN-SItu Guidance for Robotic ManipulaTion">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Project Page | Submission ID #38621</title>
 
@@ -145,6 +145,72 @@
     </div>
   </section>
 
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Simulation Results & Analysis</h2>
+      
+      <div class="content-box">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <h3 class="title is-4">Overall Task Success Rates</h3>
+            <img src="overall_performance.png" alt="Overall Success Rate Graph" style="max-width: 80%;"> 
+            <p class="is-size-6 has-text-grey-dark mt-3">
+              $\pi_0$, GROOT N1.5, SmolVLA 등 최신 VLA 모델들을 대상으로 한 전체 성능 비교입니다. 
+              시각 가이드(G-VLA)만으로는 성능 향상이 미미하지만, 언어 지시(LI-VLA)가 추가될 때 성공률이 최대 24.3%까지 크게 상승하는 것을 볼 수 있습니다. [cite: 907, 912]
+            </p>
+          </div>
+        </div>
+  
+        <hr>
+  
+        <h3 class="title is-4 has-text-centered">Per-Task Success Rate Details (%)</h3>
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <thead>
+              <tr class="has-background-link-light">
+                <th class="has-text-centered">Task Category</th>
+                <th class="has-text-centered">Model</th>
+                <th class="has-text-centered">NG (No-Guide)</th>
+                <th class="has-text-centered">G (Guided)</th>
+                <th class="has-text-centered">LI (Language)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2" class="has-text-centered" style="vertical-align: middle;"><strong>Cabinet (Selection)</strong></td>
+                <td class="has-text-centered">$\pi_0$</td>
+                <td class="has-text-centered">6.0</td>
+                <td class="has-text-centered">9.8</td>
+                <td class="has-text-centered">9.2</td>
+              </tr>
+              <tr>
+                <td class="has-text-centered">GROOT N1.5</td>
+                <td class="has-text-centered">8.7</td>
+                <td class="has-text-centered">27.2</td>
+                <td class="has-text-centered">24.5</td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="has-text-centered" style="vertical-align: middle;"><strong>Door (Procedural)</strong></td>
+                <td class="has-text-centered">$\pi_0$</td>
+                <td class="has-text-centered">31.9</td>
+                <td class="has-text-centered">8.3</td>
+                <td class="has-text-centered">52.8</td>
+              </tr>
+              <tr>
+                <td class="has-text-centered">GROOT N1.5</td>
+                <td class="has-text-centered">58.3</td>
+                <td class="has-text-centered">44.4</td>
+                <td class="has-text-centered">69.4</td>
+              </tr>
+            </tbody>
+          </table> [cite: 1420]
+        </div>
+        <p class="is-size-7 has-text-grey">※ 상세 데이터는 논문의 Table 2를 기반으로 작성되었습니다. [cite: 1417]</p>
+      </div>
+    </div>
+  </section>
+  
   <section class="section has-background-light">
     <div class="container is-max-desktop">
       <h2 class="section-title">Real-World Validation</h2>
