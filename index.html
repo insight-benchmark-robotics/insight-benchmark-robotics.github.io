@@ -2,225 +2,198 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="I Bench: ...">
+  <meta name="description" content="Towards Grounded In-Situ Guidance for Robotic Manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>I Bench</title>
+  <title>Project Page | Submission ID #38621</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   
   <style>
-    body { font-family: 'Noto Sans', sans-serif; }
-    .publication-title { font-family: 'Google Sans', sans-serif; font-weight: 700 !important; }
-    .hero { background-color: #ffffff; }
-    .section { padding: 3rem 1.5rem; }
-    .teaser-video { border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    .taxonomy-box { background: #f9f9f9; border-radius: 8px; padding: 20px; border-left: 5px solid #3273dc; }
-    .results-chart { width: 100%; max-width: 800px; margin: 0 auto; }
-    pre { background-color: #f5f5f5; padding: 15px; border-radius: 5px; }
-    .external-link { border-radius: 25px !important; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+    :root { --primary-color: #3273dc; --dark-bg: #1f242d; }
+    body { font-family: 'Noto Sans', sans-serif; background-color: #fafafa; color: #363636; }
+    .nav-header { background: white; border-bottom: 1px solid #eee; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; }
+    .publication-title { font-family: 'Google Sans', sans-serif; font-weight: 800; font-size: 2.8rem; line-height: 1.2; color: #222; margin-bottom: 1.5rem; }
+    .hero { background: white; padding: 4rem 0 2rem 0; }
+    .author-block { font-size: 1.25rem; color: #555; }
+    .link-block a { margin: 0.5rem; border-radius: 30px; font-weight: 600; padding: 0.6rem 1.5rem; }
+    
+    .section-title { font-family: 'Google Sans', sans-serif; font-weight: 700; font-size: 2.2rem; margin-bottom: 2rem; text-align: center; }
+    .content-box { background: white; border-radius: 15px; padding: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    
+    .taxonomy-card { border-top: 5px solid var(--primary-color); height: 100%; transition: 0.3s; }
+    .taxonomy-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+    
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.15); }
+    .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+    
+    .result-table { width: 100%; border-collapse: separate; border-spacing: 0 8px; }
+    .result-table th { background: #f1f3f5; padding: 12px; border: none; }
+    .result-table td { background: white; padding: 15px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+    .highlight-row { background: #eef4ff !important; font-weight: 700; }
+
+    footer { background: var(--dark-bg); color: white; padding: 3rem 0; margin-top: 5rem; }
   </style>
 </head>
 <body>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">I Bench:.................</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><strong>[Your Name]</strong><sup>1</sup>,</span>
-              <span class="author-block">[Co-author Name]<sup>1</sup>,</span>
-              <span class="author-block">[Advisor Name]<sup>1</sup></span>
-            </div>
-            <div class="is-size-5 publication-affiliations">
-              <span class="author-block"><sup>1</sup>[Your University/Lab]</span>
-            </div>
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <a href="#" class="external-link button is-dark is-rounded"><span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span></a>
-                <a href="#" class="external-link button is-dark is-rounded"><span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span></a>
-                <a href="#" class="external-link button is-dark is-rounded"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a>
-                <a href="#" class="external-link button is-dark is-rounded"><span class="icon"><i class="fas fa-database"></i></span><span>Dataset</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
+  <section class="hero has-text-centered">
+    <div class="container is-max-desktop">
+      <h1 class="publication-title">Towards Grounded In-Situ Guidance for Robotic Manipulation</h1>
+      <div class="author-block">
+        <strong>Anonymous CVPR 2026 Submission</strong><br>
+        <span class="has-text-weight-semibold">Paper ID: 38621</span>
+      </div>
+      <div class="link-block mt-5">
+        <a href="#" class="button is-dark is-rounded"><span><i class="fas fa-file-pdf mr-2"></i>Paper</span></a>
+        <a href="#" class="button is-dark is-rounded"><span><i class="fas fa-video mr-2"></i>Video</span></a>
+        <a href="#" class="button is-dark is-rounded"><span><i class="fab fa-github mr-2"></i>Code (Coming Soon)</span></a>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <video poster="" id="teaser" autoplay muted loop playsinline height="100%" class="teaser-video">
-            <source src="teaser_video.mp4" type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered mt-4">
-            I Bench .......
-          </h2>
-        </div>
+      <div class="video-container">
+        <video autoplay muted loop playsinline>
+          <source src="teaser_main.mp4" type="video/mp4">
+        </video>
       </div>
+      <p class="has-text-centered mt-4 is-size-5 has-text-grey-dark">
+        We formalize the task of <strong>"In-situ Guide Grounding"</strong>: a robot's ability to interpret symbols 
+        and text physically attached to objects.
+      </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              .... 
-              We introduce <strong>I Bench</strong>, a benchmark that ... 
-              ]It provides a comprehensive taxonomy and a scalable simulation framework for robotic manipulation.
-            </p>
-          </div>
+      <div class="content-box">
+        <h2 class="title is-3 has-text-centered">Abstract</h2>
+        <div class="content is-size-6 has-text-justified">
+          Humans intuitively use on-object guides (e.g., "PULL", "Squeeze and Turn") to interact with environments. 
+          Our work introduces a diagnostic benchmark evaluating how VLA models ground these cues. 
+          Through <strong>14k+ Expert Trajectories</strong> across five taxonomy categories, 
+          we show that while models succeed in simple selection, grounding directional and procedural guidance 
+          remains a major perception bottleneck.
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Taxonomy of ...</h2>
-      <div class="taxonomy-box content">
-        <ul>
-          [cite_start]<li><strong>A...</strong>: ....</li>
-          [cite_start]<li><strong>B...</strong>: ....</li>
-          [cite_start]<li><strong>C...</strong>: ....</li>
-          [cite_start]<li><strong>D...</strong>: ....</li>
-          [cite_start]<li><strong>E...</strong>: ....</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">The I Bench Suite</h2>
-      <div class="columns is-multiline">
-        <div class="column is-half">
-          <div class="card">
-            <div class="card-image"><img src="cabinet_img.png" alt="Cabinet Task"></div>
-            [cite_start]<div class="card-content"><p class="title is-5">task1 ...</p></div>
-          </div>
-        </div>
-        <div class="column is-half">
-          <div class="card">
-            <div class="card-image"><img src="door_img.png" alt="Door Task"></div>
-            [cite_start]<div class="card-content"><p class="title is-5">task2 ...</p></div>
-          </div>
-        </div>
-        <div class="column is-half">
-          <div class="card">
-            <div class="card-image"><img src="bottle_std_img.png" alt="Bottle Standard"></div>
-            [cite_start]<div class="card-content"><p class="title is-5">task3 ...</p></div>
-          </div>
-        </div>
-        <div class="column is-half">
-          <div class="card">
-            <div class="card-image"><img src="bottle_sqz_img.png" alt="Bottle Squeeze"></div>
-            [cite_start]<div class="card-content"><p class="title is-5">task4 ...</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Experimental Results</h2>
-      <div class="content has-text-centered">
-        <img src="results_chart.png" class="results-chart" alt="Success Rates">
-        <p class="mt-4">
-          Current VLA models ($\pi_0$, GROOT N1.5, SmolVLA) show significant improvement when semantic information ...
-        </p>
       </div>
     </div>
   </section>
 
   <section class="section has-background-white">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Real-World Validation</h2>
-      <div class="content has-text-justified">
-        <p>
-          To verify the ecological relevance of our benchmark, we conducted real-world experiments using a 7-DoF robotic arm. 
-          We fine-tuned the simulation-pretrained weights using <strong>LoRA</strong> on a small set of real demonstrations (15 trajectories per task variation). 
-        </p>
-      </div>
-
-      <div class="columns is-centered">
-        <div class="column is-full has-text-centered">
-          <img src="realworld_setup.png" alt="Real-world Experiment Setup" style="border-radius: 12px; max-width: 100%;">
-          <p class="is-size-7 has-text-grey mt-2">Figure 11. Real-world experimental setup and illustrative examples for Task A and Task C. [cite: 74, 87]</p>
-        </div>
-      </div>
-
-      <div class="columns is-centered mt-5">
-        <div class="column is-eight-fifths">
-          <div class="table-container">
-            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-              <thead>
-                <tr class="has-background-link-light">
-                  <th class="has-text-centered">Task Category</th>
-                  <th class="has-text-centered">Method</th>
-                  <th class="has-text-centered">Success Rate (%)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td rowspan="2" class="has-text-centered" style="vertical-align: middle;"><strong>Task C (Directional)</strong></td>
-                  <td class="has-text-centered">Guided-Visual (G-VLA)</td>
-                  <td class="has-text-centered">45% [cite: 88]</td>
-                </tr>
-                <tr>
-                  <td class="has-text-centered">Language-Instructed (LI-VLA)</td>
-                  <td class="has-text-centered"><strong>65%</strong> [cite: 88]</td>
-                </tr>
-                <tr>
-                  <td rowspan="2" class="has-text-centered" style="vertical-align: middle;"><strong>Task A (Selection)</strong></td>
-                  <td class="has-text-centered">Guided-Visual (G-VLA)</td>
-                  <td class="has-text-centered">45% [cite: 88]</td>
-                </tr>
-                <tr>
-                  <td class="has-text-centered">Language-Instructed (LI-VLA)</td>
-                  <td class="has-text-centered"><strong>50%</strong> [cite: 88]</td>
-                </tr>
-              </tbody>
-            </table>
+      <h2 class="section-title">A New Taxonomy of In-Situ Guides</h2>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="box taxonomy-card">
+            <h3 class="title is-5 mb-2">01. Contact Affordance</h3>
+            <p class="is-size-7">Identifying which component is intended for interaction.</p>
           </div>
-          <p class="is-size-6 has-text-grey-dark mt-3">
-            Consistent with our simulation results, the challenge of grounding in-situ visual guides persists in the real world. 
-            The performance gap confirms that visual perception of embedded guides remains a core bottleneck. [cite: 89]
-          </p>
+        </div>
+        <div class="column is-one-third">
+          <div class="box taxonomy-card">
+            <h3 class="title is-5 mb-2">02. In-Part Specification</h3>
+            <p class="is-size-7">Detailing precise contact points (e.g., squeeze arrows).</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box taxonomy-card">
+            <h3 class="title is-5 mb-2">03. Action Directional</h3>
+            <p class="is-size-7">Constraints on motion like CW/CCW rotation or push/pull.</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box taxonomy-card">
+            <h3 class="title is-5 mb-2">04. Procedural Guidance</h3>
+            <p class="is-size-7">Multi-step operational sequences (e.g., "Rotate then Pull").</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box taxonomy-card">
+            <h3 class="title is-5 mb-2">05. Target Disambiguation</h3>
+            <p class="is-size-7">Resolving goals among multiple candidate parts.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{...,
-  title={...},
-  author={Your Name and others},
-  journal={arXiv preprint},
-  year={2026}
-}</code></pre>
+  [Image of the taxonomy of in-situ guides for robotic manipulation]
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="section-title">Diagnostic Task Suite</h2>
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <img src="fig_cabinet.png" alt="Cabinet Task" class="teaser-video">
+          <p class="is-size-6 mt-2"><strong>Task A: Selection</strong></p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="fig_door.png" alt="Door Task" class="teaser-video">
+          <p class="is-size-6 mt-2"><strong>Task B: Multi-step</strong></p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="fig_bottle_std.png" alt="Bottle Task" class="teaser-video">
+          <p class="is-size-6 mt-2"><strong>Task C: Directional</strong></p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="fig_bottle_sqz.png" alt="Squeeze Task" class="teaser-video">
+          <p class="is-size-6 mt-2"><strong>Task D: Constrained</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section has-background-light">
+    <div class="container is-max-desktop">
+      <h2 class="section-title">Real-World Validation</h2>
+      <div class="content-box">
+        <div class="columns is-vcentered">
+          <div class="column is-6">
+            <p class="is-size-6">
+              We validated our findings using a 7-DoF robotic arm. Simulation weights were fine-tuned via <strong>LoRA</strong> 
+              on a small real-world dataset (15 trajectories/task). 
+              The performance gap between visual-only (G-VLA) and language-instructed (LI-VLA) settings 
+              persists, confirming the challenge of interpreting embedded guides in the wild.
+            </p>
+          </div>
+          <div class="column is-6">
+            <table class="result-table">
+              <thead><tr><th>Task</th><th>G-VLA</th><th>LI-VLA (Language)</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Task C (Directional)</strong></td><td>45%</td><td class="highlight-row">65%</td></tr>
+                <tr><td><strong>Task A (Selection)</strong></td><td>45%</td><td class="highlight-row">50%</td></tr>
+              </tbody>
+            </table>
+            <p class="is-size-7 has-text-grey mt-2 has-text-centered">Real-world success rates (10 trials per setting)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  [Image of a real-world robotic arm experiment setup for manipulation]
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="section-title">Experimental Insights</h2>
+      <div class="has-text-centered">
+        <img src="overall_results.png" alt="Success Rates" style="max-width: 80%; border-radius: 10px;">
+        <div class="content mt-5 is-size-6 has-text-justified">
+          <ul>
+            <li><strong>Perception Bottleneck:</strong> Models struggle to ground directional and procedural information from raw visual input alone.</li>
+            <li><strong>Language as a Proxy:</strong> Performance jumps significantly when guides are provided as text (LI-VLA), showing the action policy itself is robust.</li>
+            <li><strong>Visual Distraction:</strong> For smaller backbones, on-object guides can act as visual distractors, leading to a performance drop.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container">
-      <div class="content has-text-centered">
-        <p>This website is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
-      </div>
+    <div class="container has-text-centered">
+      <p>Anonymous Project Page for Submission ID #38621</p>
+      <p class="is-size-7 has-text-grey-light">Built with Bulma & Academic Project Template</p>
     </div>
   </footer>
 
